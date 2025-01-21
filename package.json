@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,9 @@
     "@eslint/js": "^9.18.0",
     "css-loader": "^7.1.2",
     "eslint": "^9.18.0",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
+    "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "prettier": "^3.4.2",
     "sass": "^1.83.4",

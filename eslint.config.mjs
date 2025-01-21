@@ -8,4 +8,9 @@ export default [
   {
     ignores: ['webpack.config.js', 'dist/'],
   },
+  {
+    rules: {
+      'no-unused-vars': 'off',
+    },
+  },
 ];
